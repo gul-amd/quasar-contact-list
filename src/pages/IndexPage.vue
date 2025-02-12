@@ -6,7 +6,7 @@
           <q-tr :props="props">
             <q-th auto-width />
             <div class="row justify-end">
-              <q-btn color="primary" label="Novo" icon="add"></q-btn>
+              <q-btn color="primary" label="Novo" icon="add" :to="'/formsPage'"></q-btn>
             </div>
             <q-th v-for="col in props.cols" :key="col.name" :props="props">
               {{ col.label }}
